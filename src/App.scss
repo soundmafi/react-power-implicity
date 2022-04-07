@@ -1,23 +1,29 @@
-.app{
-    max-width: 1410px;
-    width: 100%;
-    margin: 0 8px;
-    padding: 2em;
-    border-radius: 32px;
-    background: linear-gradient(180deg, rgba(43, 34, 21, 0.8) -1.22%, #22282E 101.33%);             
-}
+.app {
+	max-width: 1410px;
+	width: 100%;
+	margin: 25px auto;
+	padding: 2em 2em 14em;
+	border-radius: 32px;
+	background: linear-gradient(180deg, rgba(43, 34, 21, 0.8) -1.22%, #22282e 101.33%);
 
+	@media (max-width: 1024px) {
+		margin: 10px auto;
+		padding: 1em 1em 5em;
+	}
 
-@media (max-width: 767px){
-    .app{
-        margin: 0 auto;
-        padding: 1em;
-    }
-}
+	@media (max-width: 767px) {
+		margin: 5px auto;
+		padding: 0.5em 0.5em 2em;
+		border-radius: 25px;
+	}
 
-@media (max-width: 480px){
-    .app{
-        margin: 0 auto;
-        padding: 1em;
-    }
+	@media (max-width: 479px) {
+		margin: 0px auto;
+		padding: 0.3em 0.3em 2em;
+		border-radius: 0;
+	}
+
+	@media (max-width: 319px) {
+		padding: 0.3em;
+	}
 }

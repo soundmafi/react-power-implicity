@@ -2,7 +2,7 @@ import './styles.scss';
 
 const Header = () => {
 	return (
-		<div className="header">
+		<header className="header">
 			<div className="header__slider">
 				<h1 className="header__title">The Power of Simplicity</h1>
 				<p className="header__text">
@@ -10,15 +10,15 @@ const Header = () => {
 					right app to you.
 				</p>
 				<a href="#" className="header__btn">Learn</a>
-				<div className="header__controls">
-					<div className="header__dot"></div>
-					<div className="header__dot"></div>
-					<div className="header__dot header__dot--active"></div>
-					<div className="header__dot"></div>
-					<div className="header__dot"></div>
-				</div>
+				<ul className="header__controls">
+					<li className="header__dot"></li>
+					<li className="header__dot"></li>
+					<li className="header__dot header__dot--active"></li>
+					<li className="header__dot"></li>
+					<li className="header__dot"></li>
+				</ul>
 			</div>
-		</div>
+		</header>
 	);
 };
 
